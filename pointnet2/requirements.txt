@@ -5,3 +5,5 @@ h5py
 
 hydra-core==0.11.3
 pytorch-lightning==0.7.1
+
+"git+git://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointnet2_ops&subdirectory=pointnet2_ops_lib"

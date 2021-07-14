@@ -20,8 +20,8 @@ setup(
             name='pointnet2._ext',
             sources=_ext_sources,
             extra_compile_args={
-                "cxx": ["-O2", "-I{}".format("{}/include".format(_ext_src_root))],
-                "nvcc": ["-ccbin /usr/bin/x86_64-linux-gnu-gcc-7", "-O2", "-I{}".format("{}/include".format(_ext_src_root))],
+                "cxx": ["-O2", "-I{}".format("{}/include".format(_ext_src_root)), "-dumpversion"],
+                "nvcc": ["-O2", "-I{}".format("{}/include".format(_ext_src_root))],
             },
         )
     ],

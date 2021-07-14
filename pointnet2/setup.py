@@ -17,10 +17,10 @@ headers = "-I" + os.path.join(os.path.dirname(os.path.abspath(__file__)), '_ext_
 
 setup(
     name='pointnet2',
+    headers=_ext_headers,
     ext_modules=[
         CUDAExtension(
             name='pointnet2._ext',
-            headers=_ext_headers,
             sources=_ext_sources,
             extra_compile_args={
                 "cxx": ["-O2", headers],

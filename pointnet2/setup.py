@@ -21,7 +21,7 @@ setup(
             sources=_ext_sources,
             extra_compile_args={
                 "cxx": ["-O2", "-I{}".format("{}/include".format(_ext_src_root))],
-                "nvcc": ["-O2", "-I{}".format("{}/include".format(_ext_src_root)), "--compiler-bindir=/usr/bin/x86_64-linux-gnu-gcc-7"],
+                "nvcc": ["-O2", "-I{}".format("{}/include".format(_ext_src_root)), "--compiler-bindir=/usr/bin/x86_64-linux-gnu-gcc-9"],
             },
         )
     ],

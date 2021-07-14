@@ -23,7 +23,7 @@ setup(
             sources=_ext_sources,
             extra_compile_args={
                 "cxx": ["-O2", headers],
-                "nvcc": ["-O2", headers, "-ccbin=gcc-7"],
+                "nvcc": ["-O2", headers],
             },
         )
     ],

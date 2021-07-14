@@ -24,7 +24,7 @@ except:
 
 try:
     import pointnet2 as ppp
-    print(ppp)
+    print(dir(ppp))
     import pointnet2._ext as _ext
 except ImportError:
     if not getattr(builtins, "__POINTNET2_SETUP__", False):

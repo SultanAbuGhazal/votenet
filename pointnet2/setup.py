@@ -23,7 +23,7 @@ setup(
             sources=_ext_sources,
             extra_compile_args={
                 "cxx": ["-O2", headers],
-                "nvcc": ["-O2", headers, "--compiler-bindir=/usr/bin/gcc"],
+                "nvcc": ["-O2", headers, "--compiler-bindir=/etc/alternatives/gcc"],
             },
         )
     ],
